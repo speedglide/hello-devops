@@ -1,12 +1,12 @@
-var express = require('express')
+var express = require('express');
 const process = require('process');
 
-var expressapp = express()
+var expressapp = express();
 expressapp.get('/', function (req, res) {
-    res.send('{"message":"Hello Devops as JSON from a nodejs server REST API v1"}')
+    res.send('{"message":"Hello Devops as JSON from a nodejs server REST API v1"}');
 })
 expressapp.listen(80, function () {
-    console.log('Ready on port 80')
+    console.log('Ready on port 80');
 })
 
 /* To Handle Ctrl C*/
