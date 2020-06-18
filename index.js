@@ -5,8 +5,8 @@ var expressapp = express()
 expressapp.get('/', function (req, res) {
     res.send('{"message":"Hello Devops as JSON from a nodejs server REST API v1"}')
 })
-expressapp.listen(5000, function () {
-    console.log('Ready on port 5000!')
+expressapp.listen(80, function () {
+    console.log('Ready on port 80')
 })
 
 /* To Handle Ctrl C*/
